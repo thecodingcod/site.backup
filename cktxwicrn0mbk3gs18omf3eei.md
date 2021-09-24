@@ -1,7 +1,5 @@
 ## First Article - Welcome Everyone!
 
-## Who am I?
-
 ![gif](https://media0.giphy.com/media/l0ExjXFjovrw4MUcU/giphy.gif)
 
 Hi there ✋, I'm Mohamed Halawa a **Fullstack web developer** from Egypt. I use the web trinity **HTML**, **CSS **and **JavaScript** along with the **.NET** stack on a daily basis to **develop websites** though I'm not loyal to the .NET Stack as I'm considering myself a **language-agnostic**.
