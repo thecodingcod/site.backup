@@ -8,6 +8,7 @@ I knew **[DBeaver](https://dbeaver.io/)** from a long time ago, and I wondered i
 
 **The good news** we can customize it to make it work Out-of-the-box!
 
+
 - [Download and Install DBeaver](#Download-and-Install-DBeaver)
 - [Getting the right driver](#getting-the-right-driver)
 - [Linking Everything together ](#linking-everything-together )
@@ -15,19 +16,22 @@ I knew **[DBeaver](https://dbeaver.io/)** from a long time ago, and I wondered i
 - [Further Support](#further-support)
 
 
-## Download and Install DBeaver
+## 1. Download and Install DBeaver
+---
 
 1. head to https://dbeaver.io/
 2. download the one that suits your OS
 3. Install!
 
-## Getting the right driver
+## 2. Getting the right driver
+---
 
 1. head to [sqlite-jdbc-crypt](https://github.com/Willena/sqlite-jdbc-crypt/releases) and download the latest `sqlite-jdbc-<version>.jar`.
 2. copy that file in a safe place on your pc that you **DON'T ACCIDENTALLY REMOVE**! 
 > Personally, I prefer to place them in the `%UserProfile%/Documents` directory as no one care about it!
 
-## Linking Everything together 
+## 3. Linking Everything together 
+---
 
 Well, there are multiple versions of SQLCipher and in this article, I'll target only **SQLCipherV3** since it's more common between developers but it's the same Idea once you grasp it!
 
@@ -96,7 +100,8 @@ For different version parameters of **SqlCipher** visit:  https://utelle.github.
 > - for `n/a` values don’t enter anything!
 > - `v<x>` indicates the **SQLCipher** Version!
 
-## Add Your Database to DBeaver
+## 4. Add Your Database to DBeaver
+---
 
 - From **Database** Menu —> Select **New Database Connection**
 - Search for **SQLCipherV3** (the one we created recently) and press **Next**
