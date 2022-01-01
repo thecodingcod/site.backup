@@ -39,7 +39,7 @@ As a 21st-century developer, I made very tiny research trying to answer that que
 ![screen shot](https://cdn.hashnode.com/res/hashnode/image/upload/v1641049306264/RsD86KJ6_.png)
 source: [http://www.dev.to](https://dev.to/pandaquests/how-did-people-develop-software-before-git-or-version-control-1564)
 
-> **Disclaimer:** I tried to find a way to contact Mr. Douglas to ask his permission to mention his words in this SS but I failed.
+> **Disclaimer:** I tried to find a way to contact Mr Douglas to ask his permission to mention his words in this SS but I failed.
 
 **Was it the only way of doing that, copy & paste on a shared hard drive?** No, they used what is so-called [tarball](https://www.gnu.org/software/gnuastro/manual/html_node/Release-tarball.html) to version their software which was mainly used by GNU to deliver their open-source software. 
 
@@ -61,7 +61,7 @@ Aside from the fact that it's the most commonly used version control system, It 
 4. **No more single point of failure.** 
    - With SVN, if the central repository goes down or some code breaks the build, no other developers can commit their code until the repository is fixed.
    - With Git, each developer has their own repository, so it doesn’t matter if the central repository is broken. Developers can continue to commit code locally until the central repository has been fixed, and then they can push their changes.
-5. **It’s available offline.** Unlike SVN, Git can work offline, allowing your team to continue working without losing features if they lose connection.
+5. **It’s available offline.**, Unlike SVN, Git can work offline, allowing your team to continue working without losing features if they lose connection.
 6. **It’s open-source and cross-platform.**
 
 > - Hey! I guess you forgot to mention that SVN repos are far bigger in size than Git!
@@ -91,7 +91,7 @@ With Git, that repository must contain a `.git` hidden directory that holds all 
 
 **So why a repository is a special type of directory again?** simply because it contains the `.git` directory.
 
-A repository can hold any type of files and multiple directories. By default, it will keep track of all changes that affect all the files and maintain their history, but you can choose to ignore some files or directories that you believe are not important to exist in the remote repository -being hold by a Git service provider like GitHub- by listing these files or directories in the `.gitignore` file.
+A repository can hold any type of files and multiple directories. By default, it will keep track of all changes that affect all the files and maintain their history, but you can choose to ignore some files or directories that you believe are not important to exist in the remote repository -being held by a Git service provider like GitHub- by listing these files or directories in the `.gitignore` file.
 
 ---
 
@@ -99,7 +99,7 @@ A repository can hold any type of files and multiple directories. By default, it
 
 ![branching](https://cdn.hashnode.com/res/hashnode/image/upload/v1641049317132/A2LSO1IQb.png)
 
-Branching means you diverge from the main line of development and continue to do work without messing with that mainline. In many VCS tools, this is a somewhat expensive process, often requiring you to create a new copy of your source code directory, which can take a long time for large projects.
+Branching means you diverge from the mainline of development and continue to do work without messing with that main line. In many VCS tools, this is a somewhat expensive process, often requiring you to create a new copy of your source code directory, which can take a long time for large projects.
 
 ## What is a git branch?
 
@@ -107,7 +107,7 @@ Branching means you diverge from the main line of development and continue to do
 
 **A branch in Git is simply a lightweight movable pointer to one of these commits.** The default branch name in Git is master. As you start making commits, you’re given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.
 
-The way **Git branches is incredibly lightweight**, making branching operations nearly instantaneous, and switching back and forth between branches generally just as fast. and Unlike many other VCSs, Git encourages workflows that branch and merge often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can entirely change your development.
+The way **Git branches are incredibly lightweight**, making branching operations nearly instantaneous, and switching back and forth between branches generally just as fast. and Unlike many other VCSs, Git encourages workflows that branch and merge often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can entirely change your development.
 
 The “master” branch in Git **is not a special branch.** It is exactly like any other branch. The only reason nearly every repository has one is that the `git init` command creates it by default and most people don’t bother to change it.
 
@@ -181,7 +181,7 @@ A hotfix branch is a branch that’s used generally to hold changes related to e
 
 #### GitFlow
 
-[GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) was introduced by Vincent Driessen in 2010 to share insight into the use of Git for source control as its use became more widespread. GitFlow relies essentially on every type of branch that was discussed previously with the bulk of the development workflow centering on the long-lived development branch as a shared integration branch for all the developers. The main branch, in this case, essentially reflects a history of all the changes that have gone to production.
+[GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) was introduced by Vincent Driessen in 2010 to share insight into the use of Git for source control as its use became more widespread. GitFlow relies essentially on every type of branch that was discussed previously with the bulk of the development workflow centring on the long-lived development branch as a shared integration branch for all the developers. The main branch, in this case, essentially reflects a history of all the changes that have gone to production.
 
 #### GitHub Flow
 
