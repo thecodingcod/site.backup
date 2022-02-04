@@ -1,4 +1,4 @@
-## Using DBeaver To Manage SQLCipher Databases
+## How to manage Sqlcipher using DBeaver in a right and easy way?
 
 I’ve tried multiple solutions to manage the SQLCipher database. either using a CLI or a GUI and the only one that seemed to work properly was [DB Browser for SQLite](https://sqlitebrowser.org/) with easy GUI to get into the Database. but there were a lot of restrictions or I can say a **missing functionalities**. For example, I wanted to view the ERD of the database but I didn't find the proper functionality to do so!
 
