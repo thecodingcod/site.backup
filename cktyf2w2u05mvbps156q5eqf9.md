@@ -1,13 +1,28 @@
-## How to manage Sqlcipher using DBeaver in a right and easy way?
+## A Concise Guide On Managing SQLCipher Databases using DBeaver Universal DBMS
 
-I’ve tried multiple solutions to manage the SQLCipher database. either using a CLI or a GUI and the only one that seemed to work properly was [DB Browser for SQLite](https://sqlitebrowser.org/) with easy GUI to get into the Database. but there were a lot of restrictions or I can say a **missing functionalities**. For example, I wanted to view the ERD of the database but I didn't find the proper functionality to do so!
+## Introduction
+SQLCipher is a standalone fork of SQLite that adds security features. It's frequently used in industries where offline data security matters.
 
-I knew **[DBeaver](https://dbeaver.io/)** from a long time ago, and I wondered if I can use it with SQLCipher. but like any other thing in life, it doesn't seem to work without a headache! 
+If you're looking for the best possible way to manage it in an easy way, then you're reading the right and exact article needed to get the job done!
 
-**The bad news** is there is no GUI to support the configuration process for SQLCipher databases.
 
-**The good news** we can customize it to make it work Out-of-the-box!
+## Available Solutions
+Before heading to the topic I'd like to mention all the available solutions to manage the SQLCipher database:
+- Use the [CLI](https://github.com/sqlcipher/sqlcipher)
+- Using [DB Browser for SQLite](https://sqlitebrowser.org/)
+- And Finally, Use DBeaver which I'll explain how to in this article.
 
+## Why DBeaver?
+Well, alongside running queries against the database, inspect its data or check other DB objects like the Views, tables or Stored Procedure. you can also **generate an ERD** for the existing database which is too helpful when it comes to exploring the database from a high-level perspective!
+
+
+## Challenges
+**[DBeaver](https://dbeaver.io/)** has no GUI to support the configuration process for SQLCipher databases.
+
+**The Good NEWS** we can make it work Out-of-the-box!
+
+
+## Instructions
 
 - [Download and Install DBeaver](#Download-and-Install-DBeaver)
 - [Getting the right driver](#getting-the-right-driver)
@@ -16,31 +31,25 @@ I knew **[DBeaver](https://dbeaver.io/)** from a long time ago, and I wondered i
 - [Further Support](#further-support)
 
 
-## 1. Download and Install DBeaver
+### 1. Download and Install DBeaver
 ---
 
 1. head to https://dbeaver.io/
-2. download the one that suits your OS
-3. Install!
+2. download and install the one that suits your OS
 
-## 2. Getting the right driver
+### 2. Getting the right driver
 ---
 
-1. head to [sqlite-jdbc-crypt](https://github.com/Willena/sqlite-jdbc-crypt/releases) and download the latest `sqlite-jdbc-<version>.jar`.
-2. copy that file in a safe place on your pc that you **DON'T ACCIDENTALLY REMOVE**! 
+1. Open the following Link [sqlite-jdbc-crypt](https://github.com/Willena/sqlite-jdbc-crypt/releases) and download the latest `sqlite-jdbc-<version>.jar`.
+2. Copy that file in a safe place on your pc that you **DON'T ACCIDENTALLY REMOVE**! 
 > Personally, I prefer to place them in the `%UserProfile%/Documents` directory as no one care about it!
 
-## 3. Linking Everything together 
----
-
-Well, there are multiple versions of SQLCipher and in this article, I'll target only **SQLCipherV3** since it's more common between developers but it's the same Idea once you grasp it!
-
-### Creating a custom driver for DBeaver
+### 3. Create a custom driver for DBeaver
 
 1. From **Database** Menu --> Open **DriverManager**
 2. Hit **New**, and now let‘s configure it 
 
-#### 1. `Settings` Tab
+#### 3.1. Settings Tab
 
 - Driver Name = **SqlCipherV3**  (or any name you’d like)
 - Driver Type, Select Generic
@@ -49,7 +58,7 @@ Well, there are multiple versions of SQLCipher and in this article, I'll target 
 
 The rest are not mandatory, feel free to set them up on your own!
 
-#### 2. `Libraries` Tab
+#### 3.2. Libraries Tab
 
 Remember the `.jar` file that we’ve downloaded recently? 
 
@@ -60,11 +69,14 @@ If your answer was **yes**, Let‘s continue ...
 - Click `Add File` and Select that `.jar` file
 - Click `Find Class` and select `org.sqlite.JDBC` 
 
-#### 3. Driver Prosperities
+#### 3.3. Driver Prosperities
 
 Here comes the most important part, make sure that you’ve configured that one properly!
 
-> To Add a property, Right-Click and press Add
+> We are targeting **SQLCipherV3** since it's more common between developers but it's the same Idea once you grasp it!
+
+
+To Add a property, Right-Click and press Add
 
 | Key                  | Value         |
 | -------------------- | ------------- |
@@ -78,7 +90,7 @@ Here comes the most important part, make sure that you’ve configured that one 
 | **legacy**           | **3**         |
 | **legacy_page_size** | **1024**      |
 
-There is one more PRAGMA  which is called `key`  and it is used to pass a passphrase that’s used to decrypt your Database, but we won’t set it here as it differs from a database to another!
+There is one more PRAGMA which is called `key`  and it is used to pass a passphrase that’s used to decrypt your Database, but we won’t set it here as it differs from one database to another!
 
 For different version parameters of **SqlCipher** visit:  https://utelle.github.io/SQLite3MultipleCiphers/docs/ciphers/cipher_sqlcipher/ and actually I’ve acquired the above one from there!
 
@@ -100,7 +112,7 @@ For different version parameters of **SqlCipher** visit:  https://utelle.github.
 > - for `n/a` values don’t enter anything!
 > - `v<x>` indicates the **SQLCipher** Version!
 
-## 4. Add Your Database to DBeaver
+### 4. Add Your Database to DBeaver
 ---
 
 - From **Database** Menu —> Select **New Database Connection**
