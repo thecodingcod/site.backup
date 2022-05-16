@@ -175,7 +175,7 @@ Finally, you should combine all of the entities within a single JSON object, the
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1652729907306/5kk5QLIFl.png align="left")
 
-## CRUD Operations
+### CRUD Operations
 For this, I've used [postman](https://www.postman.com/), and for the sake of keeping this article short, I'll just show a sample of how you can add data to an existing collection/entity.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1652729864174/A_LIYnpI3.png align="left")
