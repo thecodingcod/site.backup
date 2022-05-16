@@ -30,6 +30,7 @@ And they don't lie BTW, I tried it myself while playing around with React, and a
 - A perfect choice for a quick demo with a tiny timeframe or blueprinting a design for your new API.
 - Easy to create, all you need is to describe how your API would look-like.
 - Exponentially reduce the time and effort required for creating a fully-fledged REST API that you'd throw away within weeks.
+- Mock existing endpoint, e.g. mutating the response for experimental features.
 
 ### Cons
 - Don't ever use it in a production environment. it has a certain use-case and scope with one mission to achieve (faking a REST API)
