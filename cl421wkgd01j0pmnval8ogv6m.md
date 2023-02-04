@@ -1,4 +1,4 @@
-## Enough Talks about Good Commit Message, Enforce or validate it!
+# Enough Talks about Good Commit Message, Enforce or validate it!
 
 ## Why Commit Messages are such a big deal?
 
