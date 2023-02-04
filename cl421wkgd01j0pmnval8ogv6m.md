@@ -218,7 +218,7 @@ Git commits and commit messages, act as the backbone for the historical overview
 
 Nobody likes to spend his night reverse-engineering a code change that was made 5 moonlight years ago just to change its behavior.
 
-So please keep it clean, and enforce a level of validation over it! careless people are everywhere.
+So please keep it clean and enforce a level of validation over it! careless people are everywhere.
 
 ---
 
