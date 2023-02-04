@@ -154,6 +154,14 @@ For different version parameters of **SqlCipher** visit: https://utelle.github.i
 * Press Finish
     
 
-## Further Support
+## Need Help?
 
 If you encountered any problems, please feel free to comment below and I’ll gladly help!
+
+## Support
+
+---
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png align="left")](https://www.buymeacoffee.com/imhalawa)
+
+---
